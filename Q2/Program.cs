@@ -4,21 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exec_While01
+namespace Q2
 {
 	internal class Program
 	{
 		static void Main(string[] args)
 		{
-			int num1 = 0;
-			int num2 = 105;
-			int sum = 0;
-			while (num2 > sum)
+			int num1 = 300;
+			int num2 = 1;
+			
+			while (num1>=num2)
 			{
-				num1++;
-				sum += num1;
+				if(num1%num2 ==0)
+				{
+					Console.WriteLine(num2);
+				}
+				num2++;
 			}
-			Console.WriteLine(num1);
 		}
 	}
 }
